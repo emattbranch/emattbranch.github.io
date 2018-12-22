@@ -1,10 +1,13 @@
+body{
+  font-family: 'Arial', 'sans-serif';
+  background-color: #EEFFEE;
+}
+
 h1{ 
-  font-family: 'Bowlby One SC', Garamond, serif;
+  font-family: 'Roboto', Garamond, serif;
 }
 
 h2{
    font-family: 'Amatic SC', Arial, sans-serif;
 }
-p{
-  font-family: Arial, sans-serif;
-}
+  
