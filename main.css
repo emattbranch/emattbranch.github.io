@@ -5,9 +5,12 @@ body{
 
 h1{ 
   font-family: 'Roboto', Garamond, serif;
+  text-align: center;
 }
 
 h2{
    font-family: 'Amatic SC', Arial, sans-serif;
+  font-size: 2em;
+  text-align: center;
 }
   
