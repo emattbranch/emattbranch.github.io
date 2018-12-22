@@ -3,20 +3,34 @@ body{
   background-color: #EEFFEE;
 }
 
-li{
+ul{
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2em;
+  margin-bottom: 5em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-content: stretch;
 }
-  
+
+li{
+  list-style-type: none;
+}
+
+li:hover{
+  color: white;
+}
+
 h1{ 
   font-family: 'Roboto', Garamond, serif;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 h2{
-   font-family: 'Amatic SC', Arial, sans-serif;
+  font-family: 'Amatic SC', Arial, sans-serif;
   font-size: 2em;
   text-align: center;
+  margin-top: 0em;
 }
-  
