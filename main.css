@@ -3,15 +3,12 @@ body{
   background-color: #EEFFEE;
 }
 
-ul{
-  display: block;
-} 
-
 li{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
+  list-style-type: none;
 }
   
 h1{ 
