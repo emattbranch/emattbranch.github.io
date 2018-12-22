@@ -12,7 +12,6 @@ li{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
-  list-style-type: none;
 }
   
 h1{ 
