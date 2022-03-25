@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matthew Branch UX Researcher</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles-desktop.css">
+  <link rel="stylesheet" type="text/css" href="styles-mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;700&family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>MATTHEW BRANCH UX RESEARCHER & DESIGNER</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a class="highlighted" href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="secondary">
+      <ul class="parallelogram">
+        <li><a class="highlighted" href="venturize.html">Venturize Interaction Design</a></li>
+        <li><a href="housing.html">HABC User Testing</a></li>
+        <li><a href="mhec.html">MHEC information architecture</a></li>
+        <li><a href="homelock.html">Homelock service design</a></li>
+        <li><a href="research.html">Spanish translation research</a></li>
+        <li><a href="thesis.html">Thesis: pronouns in the workplace</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="venturize" class="case-study">
+
+    <section class="intro">
+      <h2>Loan matching tool for Venturize</h2>
+      <div>
+      <p>The client for this project is the nonprofit organization Venturize, which aims to facilitate the loan process for small business owners, in particular those who are women or belong to minority groups. They asked us to help them redesign their loan matching tool to better match their brand. The tool was originally a simple form to help Venturize collect information from their clients that the Venturize owners use to find qualifying lenders; they approached us with the aim of placing the tool in an appropriate spot on the website and making it easy and satisfying to use. I have laid out the overall steps we took as a team to deliver our design solution. Additionally you can follow these links to walkthrough our complete prototypes:</p>
+    </div>
+      <ul>
+        <li>
+          <a href="https://xd.adobe.com/view/561eebb4-9fef-4848-66c6-dc38227e011c-202f/" target="_blank"><img src="icons/smartphonebl.png" alt=""></a>
+          <a href="https://xd.adobe.com/view/561eebb4-9fef-4848-66c6-dc38227e011c-202f/">Mobile Venturize Matchfinder</a>
+        </li>
+        <li>
+          <a href="https://xd.adobe.com/view/2a41f05e-05f8-4092-70d0-331025c5b231-5c70/" target="_blank"><img src="icons/monitorbl.png" alt=""></a>
+          <a href="https://xd.adobe.com/view/2a41f05e-05f8-4092-70d0-331025c5b231-5c70/">Desktop Venturize Matchfinder</a>
+        </li>
+        <li>
+          <a href="https://xd.adobe.com/view/0d8615b0-07f6-4bf5-5cb9-8c237eed65c4-7bb7/" target="_blank"><img src="icons/seobl.png" alt=""></a>
+          <a href="https://xd.adobe.com/view/0d8615b0-07f6-4bf5-5cb9-8c237eed65c4-7bb7/">Venturize Backend Dashboard</a></li>
+      </ul>
+    </section>
+
+    <section class="challenge">
+      <div>
+        <h3>Challenge</h3>
+        <p>To design a tool that helps Venturize match their clients, small business-owners, with potential loans. We were given the working questionnaire and details about required information, and asked to design an interactive prototype that fit the Venturize brand and could be housed on their main website.</p>
+      </div>
+      <div>
+        <h3>Methodology</h3>
+        <ul>
+          <li>Heuristic evaluation</li>
+          <li>Iterative prototyping</li>
+          <li>User testing</li>
+          <li>Interaction design in Adobe XD</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3>Heuristic evaluation</h3>
+      <div>
+        <p>We started this project with heuristic research based on the current Venturize website and loan match form. We did an in-depth review of four design heuristics that were the most relevant to our project. These were: error prevention, visibility of system status, aesthetic and minimalist design, and linguistic clarity.</p>
+      </div>
+
+      <div class="gallery">
+        <!-- Full width images -->
+        <div class="gallery-slide" id="first-displayed">
+          <img src="images/venturize1.png" alt="Error prevention evalutation slide">
+        </div>
+        <div class="gallery-slide">
+          <img src="images/venturize2.png" alt="Visibility of system status evaluation slide">
+        </div>
+        <div class="gallery-slide">
+          <img src="images/venturize3.png" alt="Aesthetic and minimalist design evaluation slide">
+        </div>
+        <div class="gallery-slide lightbox">
+          <img onclick="enlarge(venturize4)" id="venturize4" src="images/venturize4.png" alt="Linguistic clarity slide">
+          <img onclick=closeLightbox(v4Big) style="display: none" id="v4Big" src="images/venturize4.png" alt="">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Iterative prototyping</h3>
+      <div>
+        <div class="lightbox">
+          <img onclick="enlarge(venturize5)" id="venturize5" src="images/venturize5.jpg" alt="Paper prototype of mobile matchfinder tool">
+          <img onclick=closeLightbox(v5Big) style="display: none" id="v5Big" src="images/venturize5.jpg" alt="">
+        </div>
+        <p>Paper prototyping:</p>
+        <p>After gathering requirements, each member of our team developed paper prototypes to share and discuss. We made detailed notes about elements we wanted to carry forward or improve.</p>
+      </div>
+      <div>
+        <p>Low fidelity digital prototyping:</p>
+        <p>We used Adobe XD to transform our paper prototypes into an initial low-fidelity digital mockup. The software allowed us to connect elements into a working prototype for user testing.</p>
+        <div class="lightbox">
+          <img onclick="enlarge(venturize6)" id="venturize6" src="images/venturize6.png" alt="Low fidelity digital prototypes of matchfinder tool">
+          <img  onclick=closeLightbox(v6Big) style="display: none" id="v6Big" src="images/venturize6.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>User testing</h3>
+      <div class="lightbox">
+        <img  onclick="enlarge(venturize8)" id="venturize8" src="images/venturize8.png" alt="">
+        <img onclick=closeLightbox(v8Big) style="display: none;" id="v8Big" src="images/venturize8.png" alt="">
+      </div>
+
+      <div class="lightbox">
+        <img onclick="enlarge(venturize7)" id="venturize7" src="images/venturize7.png" alt="">
+        <img onclick=closeLightbox(v7Big) style="display: none" id="v7Big" src="images/venturize7.png"></img>
+      </div>
+    </section>
+
+    <section>
+      <h3>High fidelity mockups</h3>
+      <p>Links to walk through the final designs are at the beginning of this page. We worked collaboratively in Adobe XD following a style guide (created by another member of the team) to achieve this result. </p>
+      <div class="lightbox">
+        <img onclick=enlarge(venturize9) id="venturize9" src="images/venturize9.png" alt="Final digital mockups for mobile matchfinder tool">
+        <img onclick=closeLightbox(v9Big) style="display: none;" id="v9Big" src="images/venturize9.png" alt="">
+      </div>
+    </section>
+
+    <section class="reflections">
+      <h3>Post-project reflections</h3>
+      <div style="margin-top: 0">
+        <p style="margin-top: 0">Idea collaboration was key to this project in order to have a unified cohesive prototype. We each focused on one heuristic area of importance to share with the rest of the group; my focus was on aesthetic and minimalist design. After researching best practices in questionnaires I suggested a single question per screen format. This would have eliminated the need to change focus between different input fields and questions on the screen, and would reduce attention competition. This type of questionnaire has been successful on mobile, and I still believe we could have used this design practice to increase usability. However, our team collectively decided to instead group our questions into themes due to the large number of required question responses. We balanced keeping each screen minimal and aesthetically streamlined with the desire to reduce the number of different screens and make the entire experience feel short and efficient to the end user.</p>
+
+        <p>
+          With the short deadline to design a full mockup, we focused primarily on iterative prototyping with multiple feedback sessions from professionals in the design field. We did a small scale usability test before moving on to the final iteration; if I were to repeat this project I would strive for a larger number of participants with greater control of the testing environment. We each performed the test remotely with our own convenience sample of participant(s). Ideally we would have made stricter qualification criteria and a controlled script for each moderator. Instead the questionning was mostly free-form to allow us to follow up and collect as much information as possible. This was necessary with the very small number of participants, but does not provide a great deal of confidence that the choices made from the results will be relevant to the entire population. In other words, our design choices based on the usability testing might not hold up when scaled across end users, despite our strong effort to follow user-centered design practices.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/matthew-branch-ux-design/" >
+      <img src="images/In-Blue-Logo.png.original.png" alt="visit LinkedIn profile">
+    </a>
+    <p>&copy2022 by Matthew Branch. <br />
+      <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by xnimrodx - Flaticon</a>
+  </footer>
+</body>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("gallery-slide");
+  if (n < 1) {slideIndex = slides.length};
+  if (n > slides.length) {slideIndex = 1};
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+function enlarge(imgTag){
+  imgTag.style="display: none;";
+  //get the image I want with the id name passed in
+  let thisImage = imgTag.nextElementSibling;
+  console.log(thisImage);
+  //get the div surrounding this image
+  let thisDiv = imgTag.parentNode;
+  //make the div the lightbox background
+  thisDiv.style = "position: fixed; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; margin: 0; background: rgba(0,0,0,.7); opacity: 1; overflow: hidden;";
+
+  thisImage.style = "cursor: zoom-out; margin: auto; position: absolute; top: 0; bottom: 0; left: 0; right: 0; max-height: 90%; box-shadow: 0 0 0 rgba(0,0,0,.3); transition: .5s ease-in-out;";
+}
+
+function closeLightbox(imgTag){
+  imgTag.style="display: none;";
+
+  imgTag.parentNode.style = "position: null; top: null; bottom: null; left: null; right: null; width: null; height: null; margin: null; background: null; opacity: null; overflow: null;";
+
+  imgTag.parentNode.firstElementChild.style = "cursor: null; margin: null; position: null; top: null; bottom: null; left: null; right: null; max-height: null; box-shadow: null; transition: null";
+}
+
+</script>
+</html>
