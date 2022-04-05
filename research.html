@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matthew Branch UX Researcher</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/pages.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;700&family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>MATTHEW BRANCH UX RESEARCHER & DESIGNER</h1>
+    <img class="hamburger" onclick="showNav()" src="icons/hamburger.png" alt="Nav" width="30px" height="30px">
+    <nav class="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a class="highlighted" href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+      <nav class="secondary">
+        <ul class="parallelogram">
+          <li><a href="venturize.html">Venturize Interaction Design</a></li>
+          <li><a href="housing.html">HABC User Testing</a></li>
+          <li><a href="mhec.html">MHEC information architecture</a></li>
+          <li><a href="homelock.html">Homelock service design</a></li>
+          <li><a class="highlighted" href="research.html">Spanish translation research</a></li>
+          <li><a href="litter.html">Lexington park litter prevention</a></li>
+        </ul>
+      </nav>
+
+
+  </header>
+
+  <main id="research" class="case-study">
+
+    <section class="intro">
+      <h2>Research study on layout of multi-lingual documentation</h2>
+      <div>
+      <p>I worked with a team of 8 graduate students conducting a research study that compared visual presentation of Spanish text in relation to English text on single stream documentation. This study aims to recommend the most reader-friendly layout of information for Spanish speakers not proficient in reading English.</p>
+
+      <p>Throughout this project, conversations among the group led to the consensus that the best solution is to provide separate information in the language preferred by the client or user. However, it is not uncommon to see text presented in multiple languages on the same form. Therefore this research is relevant to improve intended communication where printing separate documents is not feasible. </p>
+    </div>
+    </section>
+
+    <section class="challenge">
+      <div>
+        <h3>Challenge</h3>
+        <p>To compare readability of Spanish text presented in different formats in relation to English text - left and right, top and bottom, and interleaved. We aimed to provide a recommendation for the best layout to improve readability for Spanish speakers who are not proficient in reading English.</p>
+      </div>
+      <div>
+        <h3>Methodology</h3>
+        <ul>
+          <li>Eye tracking research study</li>
+          <li>Questionnaire and user interview</li>
+          <li>Task analysis</li>
+          <li>Statistical analysis of results</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3>Research study design</h3>
+      <div>
+        <p>We completed a pilot study with 6 participants on different layout versions of multi-lingual documents in Spanish and English. We designed a within groups study using a latin square and three visually comparable documents presented in each layout, and aimed to answer the question: which layout is the easiest to read for primary Spanish readers? Participants were recorded reading the information using the University of Baltimore research lab eye tracker, and asked a series of questions immediately after the reading task. We chose to use eye tracking to help analyze reading behavior of our participants during the tasks. For this study we looked at three common layouts: side by side, top and bottom, and interleaved text.</p>
+      </div>
+      <div>
+        <img src="images/research/research1.png" alt="" id="research1" onclick=enlarge(this)>
+      </div>
+
+    </section>
+
+    <section>
+      <h3>Background research</h3>
+      <!-- <div class="">
+        <img src="images/research/background1.png" alt="" id="background1" onclick="enlarge(this)">
+      </div> -->
+
+      <div class="slider">
+        <!-- Full width images -->
+        <div class="slider-slide">
+          <img src="images/research/background1.png" alt="" id="background1" onclick="enlarge(this)">
+        </div>
+        <div class="slider-slide">
+          <img src="images/research/background2.png" alt="" id="background2" onclick="enlarge(this)">
+        </div>
+        <div class="slider-slide">
+          <img src="images/research/background3.png" alt="" id="background3" onclick="enlarge(this)">
+        </div>
+        <div class="slider-slide">
+          <img src="images/research/background4.png" alt="" id="background4" onclick="enlarge(this)">
+        </div>
+        <div class="slider-slide">
+          <img src="images/research/background5.png" alt="" id="background5" onclick="enlarge(this)">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+
+
+      <div>
+        <p>My team of three collaborated on a literature review of multi-lingual documentation. We focused on issues in the United States for the population of primary Spanish readers with limited English literacy; we found that healthcare is an area where a lot of improvement needs to be made. Documents are often printed instead of online and communities with higher populations of primary Spanish speakers do not have uniform translation of materials to meet their needs. Our first pilot study used three different documents with generalized relevance (for example, booking a park area for an event). After this pilot we have redesigned the study to use only sample documents related to healthcare that can be printed or viewed on a screen, as the interactive components are not the focus of this research project.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Eye tracking analysis</h3>
+      <div>
+        <p>
+          We chose to look at the metrics time taken to read text per character and the total dwell time per AOI (area of interest). Based on a review of eye tracking research, we beleive these to be a good measure of readability. For the next iteration of this study we plan to add a regression metric between AOIs, as this will show interruptions to the natural reading flow. We will question participants to reveal whether this is purposeful behavior (for example, to check the validity of information between translations...this is more likely with people who are confident readers in both languages) or if it has a negative impact on overall satisfaction with the task.
+        </p>
+        <p>
+          We decided against eye tracking visualizations, as these were not necessary to form our conclusions. We were interested in inferential analysis that might show significant difference between readability of different layouts. A visualization of the order of eye movements may be helpful if we are able to 'zoom out' to look at the order participants looked between translations; this is a potential limitation of the Tobii software, which we will clarify leading up to the next pilot study.
+        </p>
+      </div>
+      <div>
+        <img src="images/research/AOI.png" alt="" id="aoi" onclick="enlarge(this)">
+      </div>
+    </section>
+
+    <section>
+      <h3>Task analysis</h3>
+      <div>
+        <p>We created an interview questionnaire to ask each participant immediately after performing each task. These were close-format questions to enable quantitative analysis, which we thought would be the most helpful data to form conclusions about readability. The questionnaire was used to explain and support eye tracking results, as eye tracking is unable to reveal reasons behind the data. We asked comprehension questions which would show difficulty with reading if combined with longer reading times and greater regressions between languages. We also asked questions of satisfaction to help support our interpretation of the eye tracking data - if satisfaction lines up with our interpretation of difficulty, then we believe we have shown reduced readability for that layout.</p>
+      </div>
+
+      <div>
+        <img src="images/research/questionnaire.png" alt="" id="questionnaire" onclick="enlarge(this)">
+      </div>
+    </section>
+
+    <section class="reflections">
+      <h3>Project reflections</h3>
+      <div style="margin-top: 0">
+        <p style="margin-top: 0">This research project is ongoing; the above describes our first pilot study, which showed us many areas to adjust for a second pilot leading to our ultimate research study. The data from this pilot did not show significance, which we believe is due to the small sample size and limited qualification screening. We had to exclude certain participants who did not ultimately meet our criteria (they were proficient in reading English, and therefore not representative of our population of interest), which meant our sample size was too small to draw any conclusions.</p>
+
+        <p>Our background reading revealed that this is an important area of research and could make a positive impact in the field of design. Therefore, as a group we decided to use this experience as a pilot study and improve our research design to revisit in the summer of 2022. Improvements to our research fall mainly on recruitment and verification of meeting the criteria (we are working to find a community partner who will allow us to travel to our participants in the hope of increasing turnout). We will also adjust our document designs to reflect a specific industry, in this case healthcare, to help us focus our findings for an interested audience. </p>
+      </div>
+    </section>
+
+    <article class="lightbox" onclick="closeLightbox(this)">
+        <img src="images/research/research1.png" alt="" class="hide" id="research1Big">
+        <img src="images/research/background1.png" alt="" class="hide" id="background1Big">
+        <img src="images/research/background2.png" alt="" class="hide" id="background2Big">
+        <img src="images/research/background3.png" alt="" class="hide" id="background3Big">
+        <img src="images/research/background4.png" alt="" class="hide" id="background4Big">
+        <img src="images/research/background5.png" alt="" class="hide" id="background5Big">
+        <img src="images/research/aoi.png" alt="" class="hide" id="aoiBig">
+        <img src="images/research/questionnaire.png" alt="" class="hide" id="questionnaireBig">
+    </article> <!--end of lightbox-->
+
+  </main>
+
+  <nav class="mobile">
+    <ul>
+      <li><a href="venturize.html">Venturize Interaction Design</a></li>
+      <li><a href="housing.html">HABC User Testing</a></li>
+      <li><a href="mhec.html">MHEC information architecture</a></li>
+      <li><a href="homelock.html">Homelock service design</a></li>
+      <li><a class="highlighted" href="research.html">Spanish translation research</a></li>
+      <li><a href="litter.html">Lexington park litter prevention</a></li>
+    </ul>
+  </nav>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/matthew-branch-ux-design/" >
+      <img src="images/In-Blue-Logo.png.original.png" alt="visit LinkedIn profile">
+    </a>
+    <p>&copy2022 by Matthew Branch. <br />
+      <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by xnimrodx - Flaticon</a>
+  </footer>
+</body>
+
+<script src="script/main.js"></script>
+</html>

@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matthew Branch UX Researcher</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/pages.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;700&family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>MATTHEW BRANCH UX RESEARCHER & DESIGNER</h1>
+    <img class="hamburger" onclick="showNav()" src="icons/hamburger.png" alt="Nav" width="30px" height="30px">
+    <nav class="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a class="highlighted" href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="secondary">
+      <ul class="parallelogram">
+        <li><a href="venturize.html">Venturize Interaction Design</a></li>
+        <li><a class="highlighted" href="housing.html">HABC User Testing</a></li>
+        <li><a href="mhec.html">MHEC information architecture</a></li>
+        <li><a href="homelock.html">Homelock service design</a></li>
+        <li><a href="research.html">Spanish translation research</a></li>
+        <li><a href="litter.html">Lexington park litter prevention</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="housing" class="case-study">
+
+    <section class="intro">
+      <h2>Usability Test of Housing Authority of Baltimore City's Website</h2>
+      <div>
+      <p>The Housing Authority of Baltimore City aims to provide affordable housing to eligible low income families individuals in the Baltimore area. Unfortunately, the waiting list for their public housing program has been closed for many years. I worked with a small team on a generative research project on their website. We conducted a task analysis study in combination with the Tobii 2 eye tracker in the University of Baltimore Research Lab to find out what issues users have when using the website and searching for public housing assistance. This was an observational research project, using live eye tracker viewing and eye tracker visualizations to support findings from our semi-structured interview and questionnaire responses.</p>
+    </div>
+    </section>
+
+    <section class="challenge">
+      <div>
+        <h3>Challenge</h3>
+        <p>We were asked to find issues surrounding the HABC website, in particular with the section on the public housing program. We decided that a study incorporating user tasks and observational eye tracking would help us discover where and why users have issues navigating the website and finding the information they need.</p>
+      </div>
+      <div>
+        <h3>Methodology</h3>
+        <ul>
+          <li>Eye tracking research study</li>
+          <li>Task walkthrough & analysis</li>
+          <li>Qualitative interview</li>
+          <li>Statistical analysis of results</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3>Research design</h3>
+      <div>
+        <img onclick="enlarge(this)" id="housing1" src="images/housing/housing1.jpg" alt="">
+      </div>
+      <div>
+        <p>This was an observational study with 6 participants who completed tasks corresponding to our research questions while the moderator asked pre-determined as well as open-interview questions. The observer made notes on live eye tracking and participant responses. We analyzed task completion rates and qualitative findings from the interview and our observations.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Eye tracking</h3>
+      <p>Observational: <br />Live eye tracking revealed where participants focused their attention while searching for the information they needed to complete the task. By observing eye gaze and asking questions, we found areas of the website where participants were uncertain about direction likely because they did not see the necessary information. Participants focused on the most visually salient information (such as larger and spatially distinct links) first without reading blocks of text.</p>
+      <div>
+        <div>
+          <img onclick="enlarge(this)" id="housing3" src="images/housing/housing3.gif" alt="">
+        </div>
+      </div>
+      <div>
+        <video width="500" height="auto" controls>
+          <source src="images/housing/highlight.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+      </div>
+    </section>
+
+    <section>
+      <h3>Task Analysis</h3>
+      <p>We designed our task and script to dig deeper into issues with the website, beyond the fact that the public housing program waitlist is closed. We wanted to find out whether users know that the wait list is closed soon after they start looking for the application, and we wanted to discover if there were actionable steps to take besides the application.</p>
+      <div>
+        <img  onclick="enlarge(this)" id="housing4" src="images/housing/housing4.png" alt="">
+      </div>
+
+      <div>
+        <img onclick="enlarge(this)" id="housing5" src="images/housing/housing5.png" alt="">
+      </div>
+    </section>
+
+    <section>
+      <h3>Research findings and insights</h3>
+      <div><p>We calculated descriptive statistics for each of our user task success rates, which revealed the areas that needed the in depth qualitative analysis. As three observers we made separate notes from the eye tracking recordings and came to an agreement about the most significant findings to be reported to the organization.</p></div>
+      <div class="slider">
+        <!-- Full width images -->
+        <div class="slider-slide" id="first-displayed">
+          <img id="gallery1" src="images/housing/gallery1.png" alt="" onclick="enlarge(this)" >
+        </div>
+        <div class="slider-slide">
+          <img id="gallery2" src="images/housing/gallery2.png" alt="" onclick="enlarge(this)" >
+        </div>
+        <div class="slider-slide">
+          <img id="gallery3" src="images/housing/gallery3.png" alt="" onclick="enlarge(this)" >
+        </div>
+        <div class="slider-slide">
+          <img id="gallery4" src="images/housing/gallery4.png" alt="" onclick="enlarge(this)" >
+        </div>
+        <div class="slider-slide">
+          <img id="gallery5" src="images/housing/gallery5.png" alt="" onclick="enlarge(this)" >
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <section class="reflections">
+      <h3>Post-project reflections</h3>
+      <div style="margin-top: 0">
+        <p style="margin-top:0">
+          This design was an effective way to explore potential issues surrounding the application for housing on the website. The study would be greatly improved with better sampling of participants. We were able to recruit 6 participants who were similar in age, and due to recruitment limitations we were unable to screen based on likelihood of needing the services provided by the Housing Authority of Baltimore City. Ideally this study would be performed with a sample of potential applicants with varied backgrounds representing this population.<br /><br>Eye tracking in this study was supplementary to usability task analysis, and primarily used for qualitative analysis. Eye tracking could be used more effectively by assigning areas of interest (what content did participants need to see in order to complete the task?) and evaluating metrics associated with these areas. The most helpful metrics would likely be the number of gaze visits and gaze duration, both of which can indicate relative degrees of difficulty with the task. This would need to be verified by asking clarifying questions to the participant during or after the study. This would help reveal their thought process similar to a cognitive walkthrough.</p>
+      </div>
+    </section>
+
+    <article class="lightbox" onclick="closeLightbox(this)">
+        <img src="images/housing/housing1.jpg" alt="" class="hide" id="housing1Big">
+        <img src="images/housing/housing3.gif" alt="" class="hide" id="housing3Big">
+        <img src="images/housing/housing4.png" alt="" class="hide" id="housing4Big">
+        <img src="images/housing/housing5.png" alt="" class="hide" id="housing5Big">
+        <img src="images/housing/gallery1.png" alt="" class="hide" id="gallery1Big">
+        <img src="images/housing/gallery2.png" alt="" class="hide" id="gallery2Big">
+        <img src="images/housing/gallery3.png" alt="" class="hide" id="gallery3Big">
+        <img src="images/housing/gallery4.png" alt="" class="hide" id="gallery4Big">
+        <img src="images/housing/gallery5.png" alt="" class="hide" id="gallery5Big">
+    </article> <!--end of lightbox-->
+
+  </main>
+
+
+      <nav class="mobile">
+        <ul>
+          <li><a href="venturize.html">Venturize Interaction Design</a></li>
+          <li><a class="highlighted" href="housing.html">HABC User Testing</a></li>
+          <li><a href="mhec.html">MHEC information architecture</a></li>
+          <li><a href="homelock.html">Homelock service design</a></li>
+          <li><a href="research.html">Spanish translation research</a></li>
+          <li><a href="litter.html">Lexington park litter prevention</a></li>
+        </ul>
+      </nav>
+
+
+  <footer>
+    <a href="https://www.linkedin.com/in/matthew-branch-ux-design/" >
+      <img src="images/In-Blue-Logo.png.original.png" alt="visit LinkedIn profile">
+    </a>
+    <p>&copy2022 by Matthew Branch. <br />
+      <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by xnimrodx - Flaticon</a>
+  </footer>
+</body>
+
+<script src="script/main.js"></script>
+</html>
