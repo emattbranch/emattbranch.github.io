@@ -1,0 +1,517 @@
+/*
+#177E89 rgba(23,126,137,1) - teal Blue
+#084C61 rgba(8,76,97,1) - dark Blue
+#DB3A34 rgba(219,58,52,1) - burnt red
+#FFC857 rgba(255,200,87,1) - mustard yellow
+#323031 rgba(50,48,49,1) - charcoal
+*/
+
+/*---------------------------*/
+/* Universal element styles */
+/*-------------------------*/
+
+*{
+  box-sizing: border-box;
+}
+
+/* html{
+  overflow: hidden;
+} */
+
+body{
+  margin:0;
+  font-family: Assistant, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+li{
+  list-style-type: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.bold{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+h2{
+  font-size: 2em;
+}
+
+/*----------------------------------*/
+/*   Main header & footer styles   */
+/*--------------------------------*/
+
+header h1{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 400;
+  color: #111;
+
+  text-align: center;
+  font-size: 1.4em;
+  width: 80%;
+  border-bottom: solid #222 .04em;
+  padding: 3em 0 2em 0;
+}
+
+header, footer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  text-align: center;
+  background-color: #323031;
+  color: #EEE;
+  padding: 5em 0 2em;
+  margin-top: 0;
+}
+
+footer a{
+  color: #EEE;
+}
+
+/* Desktop */
+@media screen and (min-width: 801px){
+  header{
+    padding: 2em 0 3em 0;
+  }
+
+  header h1{
+    width: 50%;
+    padding-bottom: 1em;
+  }
+}
+
+/*-------------------------*/
+/* Main navigation styles */
+/*----------------------*/
+
+.hamburger{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mainNav{
+  position: absolute;
+  top: 40px;
+  background: rgba(50,48,49,.9);
+  color: white;
+  width: 100%;
+  display: none;
+}
+
+.mainNav ul{
+  margin: 0;
+  padding: 0;
+}
+
+.mainNav li{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.mainNav li:hover{
+  background: rgba(219,58,52,1);
+  width: 100%;
+}
+
+.mainNav a{
+  font-family: Hyperlegible, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 1.3em 1.5em;
+}
+
+.mainNav a:hover{
+  color: white;
+}
+
+.mainNav ul{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.dropdown ul{
+  display: none;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 801px){
+  header{
+    position: relative;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .mainNav{
+    display: block;
+    position: relative;
+    background: white;
+    margin-top: null;
+    width: 50%;
+    top: 0;
+  }
+
+  .mainNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .mainNav li:hover{
+    background: none;
+    width: 100%;
+  }
+
+  .mainNav li{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .mainNav a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #444;
+    text-align: start;
+
+    width: 100%;
+    margin: 0;
+    padding: .8em;
+  }
+
+  .mainNav a.highlighted{
+    color: #AAA;
+  }
+
+  .mainNav a:hover{
+    color: #777;
+  }
+}
+
+
+/*------------------------------*/
+/* Secondary navigation styles */
+/*----------------------------*/
+
+nav.mobile{
+  background: rgba(255,200,87,.5);
+  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+nav.mobile ul{
+  padding: 1em 0 0 0;
+}
+nav.mobile ul li{
+   text-align: center;
+   padding: .5em 0;
+   border: solid .05em black;
+   border-radius: 10px;
+ }
+
+.parallelogram{
+   display: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 801px){
+
+  nav.mobile{
+    display: none;
+  }
+
+  .dropdown ul{
+    display: none;
+    position: absolute;
+    margin-left: 10em;
+    margin-top: 2em;
+    background: rgba(50,50,50,0.9);
+  }
+
+  .dropdown:hover ul{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .dropdown ul li{
+    margin: 0;
+    width: 100%;
+  }
+
+  .dropdown ul a{
+    color: white;
+    min-width: 300px;
+    padding: 1em .5em;
+    margin: 0;
+  }
+
+  .parallelogram{
+    padding: 2em;
+    transform: skew(-20deg);
+  }
+
+  nav.secondary{
+    margin-top: .5em;
+    width: 80%;
+  }
+
+  nav.secondary ul{
+    background-color: rgba(50,48,49,1);
+    width: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    list-style-type: none;
+    padding: 0;
+    padding: .2em 0 0 1.4em;
+  }
+
+  nav.secondary a{
+    transform: skew(20deg);
+    color: white;
+    padding-right: 1em;
+    /* border: solid red; */
+    display: inline-block;
+    padding: .5em;
+  }
+  nav.secondary a:hover{
+    color: black;
+  }
+}
+
+/*---------------------------*/
+/* Floating box on homepage */
+/*-------------------------*/
+
+.floating-box{
+  background-color: rgba(255,200,87,0.5);
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 2em;
+}
+
+/*------------------------*/
+/* Card gallery styles   */
+/*----------------------*/
+
+.gallery{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.gallery .card{
+  margin: 2.5em 0;
+}
+
+.gallery .card a{
+  display: flex;
+  flex-flow: column nowrap;
+  /* border: solid red; */
+}
+
+.gallery .card div{
+  margin-left: 1em;
+  font-weight: bold;
+  color: rgba(50,48,49,1);
+}
+
+.gallery img{
+  order: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.middle p{
+
+}
+
+@media screen and (min-width: 801px){
+  .gallery{
+    margin: 2em;
+  }
+
+  .gallery .card{
+    position: relative;
+  }
+
+  .gallery img{
+    width: 500px;
+    height: 300px;
+    opacity: 1;
+    backface-visibility: hidden;
+  }
+
+  .gallery .card{
+    margin: 2em 0;
+  }
+
+  .gallery .card .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .gallery .card:hover img{
+    opacity: 0.3;
+  }
+
+  .card:hover .middle {
+    opacity: 1;
+  }
+
+  .middle p{
+    background-color:#084C61;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+
+
+/*------------------------*/
+/*  Card toggle styles   */
+/*----------------------*/
+
+.toggle-arrow{
+  border: solid rgba(8,76,97,1);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: .5em;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.toggle-down{
+  border: solid rgba(8,76,97,1);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: .5em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.toggle-arrow:hover, .toggle-down:hover{
+  border-color: #999;
+}
+
+/*---------------------*/
+/*  Lightbox styles   */
+/*-------------------*/
+
+.hide{
+  display: none;
+}
+
+.reveal{
+  display: "";
+}
+
+.lightbox{
+  background: rgba(229,229,229, 0.85);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  cursor: zoom-out;
+  justify-content: center;
+}
+
+.lightbox img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/*-------------------*/
+/*  Slider styles   */
+/*-----------------*/
+
+.slider{
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.slider-slide{
+  display: none;
+}
+
+.slider-slide:first-child{
+  display: block;
+}
+
+.slider-slide img{
+  height: 100%;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prev,
+.next{
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  padding: 25% 1% 21.8% 1%;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 3vw;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}

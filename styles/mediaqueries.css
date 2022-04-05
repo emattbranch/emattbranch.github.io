@@ -1,0 +1,32 @@
+/* Mobile screen size */
+/* @media screen and (max-width: 800px){
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  nav li{
+    margin: 0;
+    width: 100%;
+  }
+
+  nav a{
+    width: 100%;
+    margin: 0;
+    padding: 0 .8em;
+  }
+
+
+
+  nav.secondary{
+    margin-top: 2em;
+  }
+
+  nav.secondary li{
+    /* border: solid red; */
+    /* text-align: center; */
+  }
+} */

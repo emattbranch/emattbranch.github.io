@@ -1,0 +1,483 @@
+/*
+#177E89 rgba(23,126,137,1) - teal Blue
+#084C61 rgba(8,76,97,1) - dark Blue
+#DB3A34 rgba(219,58,52,1) - burnt red
+#FFC857 rgba(255,200,87,1) - mustard yellow
+#323031 rgba(50,48,49,1) - charcoal
+*/
+
+
+/*-----------------*/
+/*    Homepage    */
+/*---------------*/
+
+#index .container{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#index img{
+  width: 55%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#index .floating-box{
+  padding-top: 0;
+  margin: 1em 2em;
+}
+
+#index .container p{
+  font-size: 4vw;
+}
+
+/* reduced size screen */
+@media screen and (min-width: 801px){
+  #index .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-flow: row nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  #index .floating-box{
+    margin: 0;
+  }
+  #index .container p{
+    font-size: 1.8vw;
+  }
+
+  #index .container img{
+    min-width: 400px;
+    width: 40vw;
+    height: auto;
+    border-radius: 0;
+  }
+}
+
+
+/* full size screen */
+@media screen and (min-width: 1115px) {
+  #index .container{
+    margin: 0;
+    width: 100%;
+    justify-content: none;
+
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 20% 1fr min-content max-content 20%;
+    grid-template-rows: min-content auto min-content;
+    gap: 0px 0px;
+  }
+
+  #index .floating-box{
+    font-size: 1.37vw;
+    min-width: 500px;
+    padding-top: 0;
+    margin: 0;
+    grid-area: 1 / 2 / 4 / 4;
+  }
+
+  #index img#main-headshot{
+    grid-area: 2 / 3 / 3 / 5;
+  }
+}
+
+/*-------------------*/
+/*    About page    */
+/*-----------------*/
+#about-page h1{
+  border-bottom: none;
+}
+#about h2{
+  font-size: 1.2em;
+}
+#about p{
+  font-size: .8em;
+}
+
+
+@media screen and (min-width: 801px) {
+
+  #about-page h1{
+    border-bottom: solid #222 .04em;
+  }
+
+  #about{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  #about .img-container{
+    flex: 50%;
+  }
+
+  #about div{
+    background-color: #FFF;
+    flex: 50%;
+    padding-top: 0;
+  }
+
+  #about div h2{
+    font-size: 2.8vw;
+  }
+
+  #about div p{
+      max-width: 500px;
+      font-size: 1.7vw;
+  }
+}
+
+@media screen and (min-width: 1446px){
+  #about div p{
+    max-width: 600px;
+    font-size: 1em;
+  }
+}
+
+/*---------------------*/
+/*     Skills page    */
+/*-------------------*/
+
+#skills{
+  width: 100%;
+}
+
+#skills .bold{
+  color: rgba(219,58,52,1);
+}
+
+#skills .card{
+  width: 500px;
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#skills .card h4{
+  padding-bottom: .2em;
+  border-bottom: dotted .2em rgba(23,126,137,1);
+}
+#skills .card ul{
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills .card li{
+  margin-bottom: .8em;
+  margin-left: 0;
+}
+
+#skills .card p{
+  margin-bottom: 1em;
+}
+
+#skills .card .seemore{
+  display: none;
+}
+
+#skills section{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 801px){
+  #skills .card li{
+    padding-left: 1.5em;
+  }
+}
+
+
+/*---------------------*/
+/*     Work page      */
+/*-------------------*/
+
+#work h2{
+  font-size: 3em;
+}
+
+#work section{
+  margin: 0 1em;
+}
+
+#work section p{
+  line-height: 2em;
+}
+
+#work .card{
+}
+/* #work img{
+  object-fit: contain;
+} */
+
+@media screen and (min-width: 801px){
+  #work section, #skills section{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #work p, #skills p{
+    margin-bottom: 5em;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #work section, #skills section{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #work p, #skills section p{
+    font-size: 1.3em;
+    margin-bottom: 5em;
+    line-height: 2em;
+  }
+}
+
+
+/*--------------------*/
+/*   Contact page    */
+/*------------------*/
+
+#contact{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact section p{
+  text-align: center;
+  /* display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; */
+}
+
+#contact a img{
+  vertical-align: bottom;
+  width: 1.5em;
+  margin-left: .5em;
+}
+
+#contact form{
+  /* width: 80%; */
+  margin-bottom: 3em;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#contact form label{
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 1em;
+}
+
+#contact input{
+  /* min-width: 300px; */
+  height: 2.3em;
+}
+
+#contact textarea{
+  min-height: 200px;
+}
+
+#contact button{
+  padding: .5em 0;
+  font-family: Assistant, sans-serif;
+  background: rgba(8,76,97,1);
+  color: white;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+#contact .floating-box{
+  color: white;
+  font-weight: bold;
+  background: rgba(23,126,137,.6);
+  margin-bottom: 2em;
+}
+/* Desktop */
+@media screen and (min-width: 801px){
+  #contact{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  #contact section{
+    display: flex;
+    justify-content: center;
+    width: 49%;
+  }
+
+  #contact form{
+    width: 80%;
+    margin-bottom: 4em;
+  }
+
+  #contact input{
+    min-width: 300px;
+  }
+
+  #contact textarea{
+    min-height: 300px;
+  }
+
+  #contact button{
+    font-size: 1em;
+  }
+
+  #contact p{
+    font-size: 1.5em;
+  }
+}
+
+/*--------------------*/
+/*   Case studies    */
+/*------------------*/
+
+
+.case-study section{
+  font-size: 1.1em;
+  font-weight: 200;
+  margin: 2em 1em;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.case-study section>div{
+  margin-bottom: 1em;
+}
+
+.case-study p{
+  width: 100%;
+  padding: 0 1em;
+}
+
+.case-study h2{
+  font-size: 10vw;
+  text-decoration: underline;
+  -webkit-text-decoration: #FFC857 double underline;
+  text-decoration: #FFC857 double underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.case-study section.intro ul{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.case-study section.intro li{
+  margin: 1.5em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.case-study section.intro li img{
+  height: 64px;
+  width: 64px;
+  margin-bottom: .5em;
+}
+
+.case-study .challenge{
+  background: rgba(8,76,97,1);
+  color: white;
+  margin: 0;
+  width: 100%;
+  padding: 1em 0;
+  margin: 3em 0;
+}
+
+.case-study .challenge h3{
+  text-decoration: none;
+  width: 75%;
+  padding: 0;
+}
+
+.case-study .challenge div{
+  width: 100%;
+  padding: 0 1em;
+}
+
+.case-study .challenge ul{
+  padding: 0 1em;
+}
+
+.case-study div img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.case-study div img:hover{
+  cursor: zoom-in;
+}
+
+.case-study video{
+  max-width: 100%;
+}
+
+@media screen and (min-width: 801px){
+  .case-study section{
+    margin: 2em 4em;
+  }
+
+  .case-study section>div{
+    margin: 1em;
+    width: 45%;
+    max-width: 100%;
+  }
+
+  .case-study #triple>div{
+    width: 30%;
+  }
+
+  .case-study section.intro div{
+    width: 100%;
+    margin-left, margin-right: 4em;
+  }
+
+  .case-study .challenge{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .case-study .challenge div{
+    width: 40%;
+  }
+
+  .case-study .challenge div p{
+    max-width: 550px;
+  }
+
+  .case-study section.reflections div{
+    width: 100%;
+  }
+
+  .case-study h2{
+    font-size: 2.5em;
+  }
+
+  .case-study h3{
+    width: 100%;
+    font-size: 3vw;
+  }
+}
