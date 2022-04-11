@@ -181,6 +181,7 @@
 
 #skills .card .seemore{
   display: none;
+  font-weight: 200;
 }
 
 #skills section{
